@@ -14,7 +14,7 @@ import jaci.pathfinder.modifiers.TankModifier;
 
 public class PathWriter {
 	public static void writePath(String filename, Waypoint[] points, boolean isReversed){
-		System.out.println("writing path");
+		System.out.println("writing "+filename);
 		Trajectory left;
 		Trajectory right;
 		
