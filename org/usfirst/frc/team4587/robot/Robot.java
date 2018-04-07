@@ -50,8 +50,8 @@ public class Robot extends TimedRobot {
 		Waypoint[] points4 = new Waypoint[] {
 				new Waypoint(0, 0, 0),
 				new Waypoint(0.25, 0, 0),
-			    new Waypoint(86.0/12.0, 46.5/12.0, 0),
-			    new Waypoint(100.0/12.0, 46.5/12.0, 0),
+			    new Waypoint(86.0/12.0, 58.0/12.0, 0),
+			    new Waypoint(110.0/12.0, 58.0/12.0, 0),
 			};
 		//PathWriter.writePath("centerToLeftSwitch", points4, false/*isReversed*/);
 		//pyramid to scale
@@ -61,19 +61,19 @@ public class Robot extends TimedRobot {
 		Waypoint[] points5 = new Waypoint[] {
 				new Waypoint(0, 0, 0),
 				new Waypoint(0.25, 0, 0),
-			    new Waypoint(100.0/12.0, -33.5/12.0, 0),
+			    new Waypoint(110.0/12.0, -47.0/12.0, 0),
 			};
 		//PathWriter.writePath("centerToRightSwitch", points5, false/*isReversed*/);
 		Waypoint[] points51 = new Waypoint[] {
 				new Waypoint(0, 0, 0),
-			    new Waypoint(60.0/12.0, -38.0/12.0, 0),
 			    new Waypoint(70.0/12.0, -38.0/12.0, 0),
+			    new Waypoint(80.0/12.0, -38.0/12.0, 0),
 			};
 		//PathWriter.writePath("rightSwitchToCenter", points51, true/*isReversed*/);
 		Waypoint[] points52 = new Waypoint[] {
 				new Waypoint(0, 0, 0),
-			    new Waypoint(63.0/12.0, 42.0/12.0, 0),
-			    new Waypoint(70.0/12.0, 42.0/12.0, 0),
+			    new Waypoint(63.0/12.0, 47.0/12.0, 0),
+			    new Waypoint(70.0/12.0, 47.0/12.0, 0),
 			};
 		//PathWriter.writePath("leftSwitchToCenter", points52, true/*isReversed*/);
 		Waypoint[] points53 = new Waypoint[] {
@@ -101,11 +101,11 @@ public class Robot extends TimedRobot {
 				new Waypoint(154.0/12.0, 41.0/12.0, Pathfinder.d2r(90)),
 				new Waypoint(200.0/12.0, 108.0/12.0, Pathfinder.d2r(180)),
 			};
-		PathWriter.writePath("pyramidToLeftScale", points61, true/*isReversed*/);
+		//PathWriter.writePath("pyramidToLeftScale", points61, true/*isReversed*/);
 		Waypoint[] points6 = new Waypoint[] {
 				new Waypoint(0, 0, 0),
-				new Waypoint(110.0/12.0, 0, 0),
+				new Waypoint(165.0/12.0, 0, 0),
 			};
-		//PathWriter.writePath("anyToCrossLine", points6, false/*isReversed*/);
+		PathWriter.writePath("anyToCrossLine", points6, false/*isReversed*/);
 	}
 }
