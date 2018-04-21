@@ -20,36 +20,67 @@ public class Robot extends TimedRobot {
 		Waypoint[] points = new Waypoint[] {
 				new Waypoint(0, 0, 0),
 				new Waypoint(16.5, 0, 0),
-			    new Waypoint(22.0, 3.0, Pathfinder.d2r(20)),
+			    new Waypoint(23.0, 2.5, Pathfinder.d2r(25)),
 			};
 		//PathWriter.writePath("rightToRightScale", points, true/*isReversed*/);
 		Waypoint[] points0 = new Waypoint[] {
 				new Waypoint(0, 0, 0),
 				//new Waypoint(1.0, 0, 0),
-			    new Waypoint(4.5, -1.75, Pathfinder.d2r(-60)),
+			    new Waypoint(4.75, -4.25, Pathfinder.d2r(-75)),
 			};
 		//PathWriter.writePath("rightScaleToSwitchCube", points0, false/*isReversed*/);
 		Waypoint[] points05 = new Waypoint[] {
 				new Waypoint(0, 0, 0),
 				//new Waypoint(1.0, 0, 0),
-			    new Waypoint(3.0, 3.5, Pathfinder.d2r(70)),
+			    new Waypoint(5.0, 5.0, Pathfinder.d2r(70)),
 			};
 		//PathWriter.writePath("switchCubeToRightScale", points05, true/*isReversed*/);
 		Waypoint[] points01 = new Waypoint[] {
 				new Waypoint(0, 0, 0),
 				//new Waypoint(1.0, 0, 0),
-			    new Waypoint(4.5, -3.5, Pathfinder.d2r(-65)),
+			    new Waypoint(4.5, -7.75, Pathfinder.d2r(-85)),
 			    //new Waypoint(4.0, -7.75, Pathfinder.d2r(-90)),
 			};
 		//PathWriter.writePath("rightScaleToSecondSwitchCube", points01, false/*isReversed*/);
 		Waypoint[] points02 = new Waypoint[] {
 				new Waypoint(0, 0, 0),
 				//new Waypoint(1.0, 0, 0),
-			    new Waypoint(4.5, 3.5, Pathfinder.d2r(55)),
+			    new Waypoint(5.0, 6.25, Pathfinder.d2r(105)),
 			};
-		//PathWriter.writePath("secondSwitchCubeToRightScale", points02, true/*isReversed*/);
+		PathWriter.writePath("secondSwitchCubeToRightScale", points02, true/*isReversed*/);
 		
-		
+
+		Waypoint[] xpoints = new Waypoint[] {
+				new Waypoint(0, 0, 0),
+				new Waypoint(16.5, 0, 0),
+			    new Waypoint(22.5, -3.5, Pathfinder.d2r(-20)),
+			};
+		//PathWriter.writePath("leftToLeftScale", xpoints, true/*isReversed*/);
+		Waypoint[] xpoints0 = new Waypoint[] {
+				new Waypoint(0, 0, 0),
+				//new Waypoint(1.0, 0, 0),
+			    new Waypoint(4.5, 3.0, Pathfinder.d2r(60)),
+			};
+		//PathWriter.writePath("leftScaleToSwitchCube", xpoints0, false/*isReversed*/);
+		Waypoint[] xpoints05 = new Waypoint[] {
+				new Waypoint(0, 0, 0),
+				//new Waypoint(1.0, 0, 0),
+			    new Waypoint(5.0, -5.0, Pathfinder.d2r(-70)),
+			};
+		//PathWriter.writePath("switchCubeToLeftScale", xpoints05, true/*isReversed*/);
+		Waypoint[] xpoints01 = new Waypoint[] {
+				new Waypoint(0, 0, 0),
+				//new Waypoint(1.0, 0, 0),
+			    new Waypoint(4.5, 7.75, Pathfinder.d2r(85)),
+			    //new Waypoint(4.0, -7.75, Pathfinder.d2r(-90)),
+			};
+		//PathWriter.writePath("leftScaleToSecondSwitchCube", xpoints01, false/*isReversed*/);
+		Waypoint[] xpoints02 = new Waypoint[] {
+				new Waypoint(0, 0, 0),
+				//new Waypoint(1.0, 0, 0),
+			    new Waypoint(4.5, -6.0, Pathfinder.d2r(-105)),
+			};
+		//PathWriter.writePath("secondSwitchCubeToLeftScale", xpoints02, true/*isReversed*/);
 		
 		Waypoint[] points2 = new Waypoint[] {
 				new Waypoint(0, 0, 0),
@@ -130,7 +161,7 @@ public class Robot extends TimedRobot {
 				new Waypoint(-160.0/12.0, 120.0/12.0, Pathfinder.d2r(-170)),
 				//new Waypoint(-200.0/12.0, 65.0/12.0, Pathfinder.d2r(-150)),
 			};
-		PathWriter.writePath("pyramidToRightScale", points61, true/*isReversed*/);
+		//PathWriter.writePath("pyramidToRightScale", points61, true/*isReversed*/);
 		Waypoint[] points62 = new Waypoint[] {
 				new Waypoint(0, 0, 0),
 				/*new Waypoint(46.0/12.0, 67.0/12.0, Pathfinder.d2r(90)),
@@ -144,9 +175,15 @@ public class Robot extends TimedRobot {
 		//PathWriter.writePath("pyramidToLeftScale", points62, true/*isReversed*/);
 		Waypoint[] points6 = new Waypoint[] {
 				new Waypoint(0, 0, 0),
-				//new Waypoint(165.0/12.0, 0, 0),
-				new Waypoint(3.0, 0, 0),
+				new Waypoint(165.0/12.0, 0, 0),
+				//new Waypoint(3.0, 0, 0),
 			};
 		//PathWriter.writePath("anyToCrossLine", points6, false/*isReversed*/);
+		Waypoint[] xpoints6 = new Waypoint[] {
+				new Waypoint(0, 0, 0),
+				new Waypoint(165.0/12.0, 0, 0),
+				//new Waypoint(-3.0, 0, 0),
+			};
+		//PathWriter.writePath("anyToCrossLineBackwards", xpoints6, true/*isReversed*/);
 	}
 }
