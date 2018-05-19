@@ -102,7 +102,7 @@ public class Robot extends TimedRobot {
 			    new Waypoint(24.5, -18.5, 0),
 			    new Waypoint(27.0, -18.25, Pathfinder.d2r(20)),
 			};
-		PathWriter.writePath("leftToRightScale", points3, true/*isReversed*/);
+		//PathWriter.writePath("leftToRightScale", points3, true/*isReversed*/);
 		Waypoint[] points4 = new Waypoint[] {
 				new Waypoint(0, 0, 0),
 				new Waypoint(0.25, 0, 0),
@@ -110,6 +110,13 @@ public class Robot extends TimedRobot {
 			    new Waypoint(122.0/12.0, 50.0/12.0, 0),
 			};
 		//PathWriter.writePath("centerToLeftSwitch", points4, false/*isReversed*/);
+		Waypoint[] points4x = new Waypoint[] {
+				new Waypoint(0, 0, 0),
+			    new Waypoint(130/12.0, 0, 0),
+			    new Waypoint(150.0/12.0, -20.0/12.0, Pathfinder.d2r(-90)),
+			    new Waypoint(150.0/12.0, -40.0/12.0, Pathfinder.d2r(-90)),
+			};
+		PathWriter.writePath("leftToLeftSwitch", points4x, true/*isReversed*/);
 		//pyramid to scale
 		//46.0/12.0, 67.0/12.0, 90deg
 		//0, 134.0/12.0, 180deg
