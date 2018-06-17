@@ -54,35 +54,42 @@ public class Robot extends TimedRobot {
 
 		Waypoint[] xpoints = new Waypoint[] {
 				new Waypoint(0, 0, 0),
-				new Waypoint(15.5, 0, 0),
-			    new Waypoint(22.18, -5.0, Pathfinder.d2r(-25)),
+				new Waypoint(16.5, 0, 0),
+			    new Waypoint(22.5, -3.5, Pathfinder.d2r(-20)),
 			};
 		//PathWriter.writePath("leftToLeftScale", xpoints, true/*isReversed*/);
 		Waypoint[] xpoints0 = new Waypoint[] {
 				new Waypoint(0, 0, 0),
 				//new Waypoint(1.0, 0, 0),
-			    new Waypoint(4.5, 6.0, Pathfinder.d2r(90)),
+			    new Waypoint(5.0, 4.5, Pathfinder.d2r(20)),
 			};
 		//PathWriter.writePath("leftScaleToSwitchCube", xpoints0, false/*isReversed*/);
 		Waypoint[] xpoints05 = new Waypoint[] {
 				new Waypoint(0, 0, 0),
 				//new Waypoint(1.0, 0, 0),
-			    new Waypoint(5.0, -5.0, Pathfinder.d2r(-90)),
+			    new Waypoint(6.0, -2.0, Pathfinder.d2r(-40)),
 			};
-		//PathWriter.writePath("switchCubeToLeftScale", xpoints05, true/*isReversed*/);
+		PathWriter.writePath("switchCubeToLeftScale", xpoints05, true/*isReversed*/);
 		Waypoint[] xpoints01 = new Waypoint[] {
 				new Waypoint(0, 0, 0),
 				//new Waypoint(1.0, 0, 0),
-			    new Waypoint(4.25, 7.65, Pathfinder.d2r(85)),
+			    new Waypoint(4.5, 7.75, Pathfinder.d2r(85)),
 			    //new Waypoint(4.0, -7.75, Pathfinder.d2r(-90)),
 			};
 		//PathWriter.writePath("leftScaleToSecondSwitchCube", xpoints01, false/*isReversed*/);
 		Waypoint[] xpoints02 = new Waypoint[] {
 				new Waypoint(0, 0, 0),
 				//new Waypoint(1.0, 0, 0),
-			    new Waypoint(4.75, -6.25, Pathfinder.d2r(-105)),
+			    new Waypoint(4.5, -6.0, Pathfinder.d2r(-105)),
 			};
 		//PathWriter.writePath("secondSwitchCubeToLeftScale", xpoints02, true/*isReversed*/);
+		
+		Waypoint[] xpoints021 = new Waypoint[] {
+				new Waypoint(0, 0, 0),
+				//new Waypoint(1.0, 0, 0),
+			    new Waypoint(4.0, 0.0, 0),
+			};
+		//PathWriter.writePath("backupToDriveStation", xpoints021, true/*isReversed*/);
 		
 		Waypoint[] points2 = new Waypoint[] {
 				new Waypoint(0, 0, 0),
@@ -112,11 +119,11 @@ public class Robot extends TimedRobot {
 		//PathWriter.writePath("centerToLeftSwitch", points4, false/*isReversed*/);
 		Waypoint[] points4x = new Waypoint[] {
 				new Waypoint(0, 0, 0),
-			    new Waypoint(130/12.0, 0, 0),
-			    new Waypoint(150.0/12.0, -20.0/12.0, Pathfinder.d2r(-90)),
-			    new Waypoint(150.0/12.0, -40.0/12.0, Pathfinder.d2r(-90)),
+			    new Waypoint(80/12.0, 0, 0),
+			    new Waypoint(120.0/12.0, -20.0/12.0, Pathfinder.d2r(-90)),
+			    new Waypoint(120.0/12.0, -45.0/12.0, Pathfinder.d2r(-90)),
 			};
-		PathWriter.writePath("leftToLeftSwitch", points4x, true/*isReversed*/);
+		//PathWriter.writePath("leftToLeftSwitch", points4x, true/*isReversed*/);
 		//pyramid to scale
 		//46.0/12.0, 67.0/12.0, 90deg
 		//0, 134.0/12.0, 180deg
