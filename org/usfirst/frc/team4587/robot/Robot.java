@@ -17,39 +17,37 @@ public class Robot extends TimedRobot {
 
 	@Override
 	public void robotInit() {
-		Waypoint[] points = new Waypoint[] {
+		Waypoint[] zxpoints = new Waypoint[] {
 				new Waypoint(0, 0, 0),
 				new Waypoint(16.5, 0, 0),
-			    new Waypoint(23.0, 2.5, Pathfinder.d2r(25)),
+			    new Waypoint(22.5, 3.5, Pathfinder.d2r(20)),
 			};
-		//PathWriter.writePath("rightToRightScale", points, true/*isReversed*/);
-		Waypoint[] points0 = new Waypoint[] {
+		//PathWriter.writePath("rightToRightScale", zxpoints, true/*isReversed*/);
+		Waypoint[] zxpoints0 = new Waypoint[] {
 				new Waypoint(0, 0, 0),
 				//new Waypoint(1.0, 0, 0),
-			    //new Waypoint(4.75, -4.25, Pathfinder.d2r(-75)), WORLDS
-			    new Waypoint(4.25, -2.0, Pathfinder.d2r(-25)),
+			    new Waypoint(5.0, -3.5, Pathfinder.d2r(-20)),
 			};
-		//PathWriter.writePath("rightScaleToSwitchCube", points0, false/*isReversed*/);
-		Waypoint[] points05 = new Waypoint[] {
+		//PathWriter.writePath("rightScaleToSwitchCube", zxpoints0, false/*isReversed*/);
+		Waypoint[] zxpoints05 = new Waypoint[] {
 				new Waypoint(0, 0, 0),
 				//new Waypoint(1.0, 0, 0),
-			    //new Waypoint(5.0, 5.0, Pathfinder.d2r(70)), WORLDS
-				new Waypoint(5.5, 0.0, Pathfinder.d2r(30)),
+			    new Waypoint(6.0, 2.0, Pathfinder.d2r(40)),
 			};
-		//PathWriter.writePath("switchCubeToRightScale", points05, true/*isReversed*/);
-		Waypoint[] points01 = new Waypoint[] {
+		//PathWriter.writePath("switchCubeToRightScale", zxpoints05, true/*isReversed*/);
+		Waypoint[] zxpoints01 = new Waypoint[] {
 				new Waypoint(0, 0, 0),
 				//new Waypoint(1.0, 0, 0),
 			    new Waypoint(4.5, -7.75, Pathfinder.d2r(-85)),
 			    //new Waypoint(4.0, -7.75, Pathfinder.d2r(-90)),
 			};
-		//PathWriter.writePath("rightScaleToSecondSwitchCube", points01, false/*isReversed*/);
-		Waypoint[] points02 = new Waypoint[] {
+		//PathWriter.writePath("rightScaleToSecondSwitchCube", zxpoints01, false/*isReversed*/);
+		Waypoint[] zxpoints02 = new Waypoint[] {
 				new Waypoint(0, 0, 0),
 				//new Waypoint(1.0, 0, 0),
-			    new Waypoint(5.0, 6.25, Pathfinder.d2r(105)),
+			    new Waypoint(4.5, 6.0, Pathfinder.d2r(105)),
 			};
-		//PathWriter.writePath("secondSwitchCubeToRightScale", points02, true/*isReversed*/);
+		//PathWriter.writePath("secondSwitchCubeToRightScale", zxpoints02, true/*isReversed*/);
 		
 
 		Waypoint[] xpoints = new Waypoint[] {
@@ -63,7 +61,7 @@ public class Robot extends TimedRobot {
 				//new Waypoint(1.0, 0, 0),
 			    new Waypoint(5.0, 3.5, Pathfinder.d2r(20)),
 			};
-		PathWriter.writePath("leftScaleToSwitchCube", xpoints0, false/*isReversed*/);
+		//PathWriter.writePath("leftScaleToSwitchCube", xpoints0, false/*isReversed*/);
 		Waypoint[] xpoints05 = new Waypoint[] {
 				new Waypoint(0, 0, 0),
 				//new Waypoint(1.0, 0, 0),
@@ -235,8 +233,33 @@ public class Robot extends TimedRobot {
 				new Waypoint(0, 0, 0),
 				new Waypoint(16.0, 0, 0),
 			    new Waypoint(19.75, -4.0, Pathfinder.d2r(-80)),
-			    new Waypoint(20.5, -15.0, Pathfinder.d2r(-70)),
+			    new Waypoint(20.5, -15.0, Pathfinder.d2r(-30)),
 			};
-		//PathWriter.writePath("leftToPlatform", xypoints5, true/*isReversed*/);
+		PathWriter.writePath("leftToPlatform", xypoints5, true/*isReversed*/);
+		Waypoint[] zxypoints5 = new Waypoint[] {
+				new Waypoint(0, 0, 0),
+				new Waypoint(16.0, 0, 0),
+			    new Waypoint(19.75, 4.0, Pathfinder.d2r(80)),
+			    new Waypoint(20.5, 15.0, Pathfinder.d2r(70)),
+			};
+		//PathWriter.writePath("rightToPlatform", zxypoints5, true/*isReversed*/);
+		
+		Waypoint[] zxypoints = new Waypoint[] {
+				new Waypoint(0, 0, 0),
+				new Waypoint(14.0, 0, 0),
+			    new Waypoint(19.5, 4.0, Pathfinder.d2r(20)),
+			};
+		//PathWriter.writePath("rightToAlmostScale", zxypoints, true/*isReversed*/);
+		Waypoint[] zxypoints0 = new Waypoint[] {
+				new Waypoint(0, 0, 0),
+				//new Waypoint(1.0, 0, 0),
+			    new Waypoint(2.0, -2.0, Pathfinder.d2r(-20)),
+			};
+		//PathWriter.writePath("rightAlmostScaleToSwitchCube", zxypoints0, false/*isReversed*/);
+		Waypoint[] zxypoints4 = new Waypoint[] {
+				new Waypoint(0, 0, 0),
+				new Waypoint(2.0, -4.0, Pathfinder.d2r(-70)),
+			};
+		//PathWriter.writePath("thirdSwitchCubeRight", zxypoints4, false/*isReversed*/);
 	}
 }
