@@ -20,9 +20,9 @@ public class Robot extends TimedRobot {
 		Waypoint[] zxpoints = new Waypoint[] {
 				new Waypoint(0, 0, 0),
 				new Waypoint(16.5, 0, 0),
-			    new Waypoint(23.0, 3.8, Pathfinder.d2r(20)),
+			    new Waypoint(22.5, 3.2, Pathfinder.d2r(20)),
 			};
-		//PathWriter.writePath("rightToRightScale", zxpoints, true/*isReversed*/);
+		PathWriter.writePath("rightToRightScale", zxpoints, true/*isReversed*/);
 		Waypoint[] zxpoints0 = new Waypoint[] {
 				new Waypoint(0, 0, 0),
 				//new Waypoint(1.0, 0, 0),
@@ -38,7 +38,7 @@ public class Robot extends TimedRobot {
 		Waypoint[] zxpoints01 = new Waypoint[] {
 				new Waypoint(0, 0, 0),
 				//new Waypoint(1.0, 0, 0),
-			    new Waypoint(4.5, -7.75, Pathfinder.d2r(-85)),
+			    new Waypoint(5.25, -7.0, Pathfinder.d2r(-85)),
 			    //new Waypoint(4.0, -7.75, Pathfinder.d2r(-90)),
 			};
 		//PathWriter.writePath("rightScaleToSecondSwitchCube", zxpoints01, false/*isReversed*/);
@@ -225,7 +225,7 @@ public class Robot extends TimedRobot {
 				new Waypoint(0, 0, 0),
 				new Waypoint(2.75, 4.0, Pathfinder.d2r(50)),
 			};
-		PathWriter.writePath("thirdSwitchCube", xypoints4, false/*isReversed*/);
+		//PathWriter.writePath("thirdSwitchCube", xypoints4, false/*isReversed*/);
 		Waypoint[] xypoints5 = new Waypoint[] {
 				new Waypoint(0, 0, 0),
 				new Waypoint(16.0, 0, 0),
